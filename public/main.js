@@ -25,7 +25,7 @@ const options = {
 
 
 const loadCats = async () => {
-    const { data, status } = await API3.get('/images/search?limit=5');
+    const { data, status } = await API3.get('/images/search?limit=4');
     if (status !== 200) {
         spanError.innerHTML = "Hubo un error: " + status + data.message;
     } else {
@@ -118,11 +118,11 @@ const generateAnime = async () => {
         containerRandom.innerHTML = ""
         data.map((anime) => {
             containerRandom.insertAdjacentHTML("beforeend", `
-            <article class="container-article-f">
+            <article class="container-article-ani">
                 <div class="w-full h-5/6">
                     <img src="${anime.image}" alt="imagen" class="w-full h-full rounded-t-md object-cover">
                 </div>
-                <p class="text-white" id="${anime.image}">
+                <p class="text-gray-300">${anime.title}
                 </p>
             </article>`)
             // const button = document.getElementById(anime.image)
@@ -172,7 +172,6 @@ async function uploadPhoto() {
 
 loadFavoriteCat();
 loadCats();
-//generateAnime();
 //generateAnime();
 
 //btn.addEventListener("click", generateAnime);

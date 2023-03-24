@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container-article-a{
-    @apply w-1/5 h-full relative flex justify-center bg-gray-700 rounded-md;
+    @apply md:w-1/3 w-2/6 h-32 md:h-56 lg:h-80 relative flex justify-center bg-gray-700 rounded-md lg:w-1/5;
 }
 .btn-like{
     @apply w-10 h-1/6 bg-like3 bg-center bg-no-repeat bg-contain absolute bottom-0 hover:bg-like;
@@ -13,7 +13,12 @@
 }
 
 .container-article-f{
-    @apply w-1/5 h-80 relative flex justify-center bg-gray-900 rounded-md;
+    @apply lg:w-1/5 w-2/6 h-32 md:h-56 lg:h-80 relative flex justify-center bg-gray-900 rounded-md md:w-1/3;
 }
+
+.container-article-ani{
+    @apply w-1/5 h-80 flex flex-wrap justify-center bg-gray-700 rounded-md;
+}
+
 
 

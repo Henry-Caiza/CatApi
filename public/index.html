@@ -16,56 +16,42 @@
 </head>
 
 <body class="bg-gray-900">
-    <h1 class="text-primary font-bold text-4xl text-center mt-8">GATITOS ALEATORIOS</h1>
+    <h1 class="text-primary font-bold text-4xl text-center mt-8">PELOSOS ALEATORIOS</h1>
     <!-- <span id="error"></span> -->
     <section id="uploading" class="w-full flex flex-col place-items-center my-8">
         <h2 class="text-primary my-4 text-xl font-bold">Sube una foto</h2>
-        <form id="uploadingForm" method="post" enctype="multipart/form-data" class="w-2/6 flex gap-4">
+        <form id="uploadingForm" method="post" enctype="multipart/form-data"
+            class="w-full lg:w-3/6 flex flex-col lg:flex-row gap-4 place-items-center">
             <input class="text-gray-400 w-3/4 border-2 border-gray-500 bg-gray-800" type="file" id="file" name="file">
             <button class=" text-gray-300 w-1/4 border-2 rounded-full border-white hover:bg-gray-700" type="button"
                 onclick="uploadPhoto()">Subir
                 foto</button>
         </form>
     </section>
-    <section id="random1" class="w-full h-auto flex flex-col">
-        <h2 class="text-primary text-2xl font-bold mb-4 ml-32">ALEATORIOS</h2>
-        <div id="random" class="w-5/6 h-80 flex flex-auto gap-4 justify-center place-content-center mx-auto">
-
-            <!-- <article class="container-article-a">
-                <div class="w-full h-5/6">
-                    <img src="./img/catPeloso.jpg" id="img" alt="imagen"
-                        class="w-full h-full rounded-t-md object-cover">
-                </div>
-                <button id="${cat.id}" type="button" class="btn-like">
-                </button>
-            </article>
-            <article class="container-article-a">
-                <div class="w-full h-5/6">
-                    <img src="./img/catPeloso.jpg" id="img" alt="imagen"
-                        class="w-full h-full rounded-t-md object-cover">
-                </div>
-                <button id="${cat.id}" type="button" class="btn-like">
-                </button>
-            </article> -->
+    <hr class=" border-gray-800">
+    <section id="random1" class="w-full h-full flex flex-col">
+        <h2 class="text-primary text-2xl font-bold my-4 ml-32">ALEATORIOS</h2>
+        <div id="random"
+            class="lg:w-5/6 w-full h-auto flex flex-wrap gap-4 justify-center place-content-center mx-auto">
         </div>
-        <a class="w-1/4 h-12 text-gray-300  border-2 border-white rounded-full hover:bg-gray-700 my-8 mx-auto flex place-content-center place-items-center space-x-4 cursor-pointer"
+        <a class="w-full lg:w-1/4 h-12 text-gray-300  border-2 border-white rounded-full hover:bg-gray-700 my-8 mx-auto flex place-content-center place-items-center space-x-4 cursor-pointer"
             id="btnGnerate">
             <span>Ver
                 nuevos</span>
             <img class="w-5 h-6" src="img/generar.png" alt="">
         </a>
-
     </section>
     <section id="favorites2" class="w-full h-auto flex flex-col pb-8 bg-gray-800">
         <h2 class="text-primary text-2xl font-bold my-6 text-center">MIS FAVORITOS</h2>
-        <div id="favorites" class="w-5/6 h-auto flex flex-wrap gap-6 justify-center place-content-center mx-auto">
+        <div id="favorites"
+            class="lg:w-5/6 w-full h-auto flex flex-wrap gap-6 justify-center place-content-center mx-auto">
         </div>
     </section>
-    <section id="animes2" class="w-full h-auto flex flex-col pb-8 bg-gray-800">
+    <!-- <section id="animes2" class="w-full h-auto flex-none pb-8 bg-gray-900">
         <h2 class="text-primary text-2xl font-bold my-6 text-center">ANIMES</h2>
         <div id="animes" class="w-5/6 h-auto flex flex-wrap gap-6 justify-center place-content-center mx-auto">
         </div>
-    </section>
+    </section> -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
 </body>
