@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-article-a{
+    @apply w-1/5 h-full relative flex justify-center bg-gray-700 rounded-md;
+}
+.btn-like{
+    @apply w-10 h-1/6 bg-like3 bg-center bg-no-repeat bg-contain absolute bottom-0 hover:bg-like;
+}
+.btn-dislike{
+    @apply w-10 h-1/6 bg-like bg-center bg-no-repeat bg-contain absolute bottom-0 hover:bg-desagrado;
+}
+
+.container-article-f{
+    @apply w-1/5 h-80 relative flex justify-center bg-gray-900 rounded-md;
+}
+
+
